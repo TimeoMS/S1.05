@@ -1,4 +1,4 @@
-body > div {
+#main {
   width: fit-content;
   height: fit-content;
   background: #0f172a;
@@ -44,8 +44,7 @@ body > div {
 
 .button,
 .button-2 {
-  height: 50px;
-  width: 250px;
+  padding: 10px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,6 +53,10 @@ body > div {
   border-radius: 10px;
   gap: 5px;
   transition: 200ms all ease-in-out;
+}
+
+.button img {
+  width: 20px;
 }
 
 .button-2 {
@@ -89,7 +92,7 @@ body > div {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: linear-gradient(#3b82f6, #22d3ee);
+  background: linear-gradient(var(--first), var(--second));
 }
 
 .lien:hover div {
