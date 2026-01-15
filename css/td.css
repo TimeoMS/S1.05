@@ -1,0 +1,161 @@
+header {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+#td {
+  position: absolute;
+  top: -70px;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(rgba(12, 19, 38, 0) 40%, #0c1326 100%);
+  pointer-events: none;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: #0c1326;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+  color: white;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+footer h1 {
+  font-size: 25px;
+}
+
+#buttons {
+  font-size: 15px;
+  gap: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.button {
+  width: fit-content;
+  padding: 10px 10px;
+}
+
+main {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+#presentation {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-bottom: 30px;
+}
+
+#textes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+#textes-tags {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.main-tag {
+  font-size: 8px;
+}
+
+.tag {
+  padding: 5px;
+  font-size: 8px;
+}
+
+#infos {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.info {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#desc {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+#desc p {
+  font-size: 10px;
+  color: #94a3b8;
+}
+
+#desc h2 {
+  font-size: 15px;
+}
+
+#fleche {
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  width: 50px;
+}
+
+#code {
+  width: fit-content;
+  padding: 15px 70px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 5px;
+}
